@@ -19,7 +19,6 @@ script:
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
 deploy:
   provider: heroku
-  travis encrypt $(heroku auth:token) --add deploy.api_key --pro
   api-key: 
-    secure: $HEROKU
+    secure: bd672a12-c548-4029-9efe-04b1fa74ef63
   app: devops-lab1
